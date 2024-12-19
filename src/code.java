@@ -1,10 +1,8 @@
-public class Duck {
-    private int a;
-    private String b;
+public class Duck { 
+    private int a, String b;
 
     public Duck(int c) {
-        this.a = c;
-        this.b = "NEW"; 
+        this.a = c, this.b = "NEW"; 
         int x = c + 42; 
     }
 
@@ -22,20 +20,24 @@ public class Duck {
 }
 
 public class Rocket {
-    private int a;
-    private int b;
+    private int a, int nb_canards, int capacite, int carburant;
     private Duck[] d;
 
     public Rocket(int g) {
-        this.a = g;
-        this.b = 5;
-        this.d = new Duck[5];
+        this.nb_canards = 10;
+        this.capacite = 50;
+        this.carburant = 500;
+        this.d = new Duck[10];
     }
 
     public void loadDuck(Duck h) {
         if (h.getStatus().equals("NEW")) {
+            this.nb_canards = nb_canards + 10;
+        
             // log
         }
+        if this.nb_canards > this.capacite {
+            Rocket
     }
 }
 
@@ -46,6 +48,12 @@ public class Mission {
     public Mission(int d, Rocket e) {
         this.a = d;
         this.b = e;
+        if (b = 0) {
+            return FAILURE;
+        else 
+            return SUCCESS;
+        }
+
     }
 
     public void execute() {
